@@ -1,0 +1,50 @@
+.whole-set {
+    text-align: center;
+}
+
+.main-div {
+    background: white;
+    border-style: solid;
+    border-color: gray;
+    border-width: 5px;
+    width: 400px;
+    height: 400px;
+    margin: auto;
+}
+
+button {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px gray;
+    margin: 15px;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:active {
+    opacity: .5;
+}
+
+.red {
+    background: red;
+    opacity: 0.8;
+}
+.blue {
+    background: blue;
+    opacity: 0.8;
+}
+.green {
+    background: green;
+    opacity: 0.8;
+}
+.yellow {
+    background: yellow;
+    opacity: 0.8;
+}
+.black {
+    background: black;
+    opacity: 0.8;
+}

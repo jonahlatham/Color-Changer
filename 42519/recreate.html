@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Title</title>
+    <link rel="stylesheet" href="recreate.css">
+</head>
+<body>
+    <div class="whole">
+       <div class="top-half">
+           <div class="left-side">
+               <button class="silverButton" id="silver" onclick="myFunction('silver')"></button> 
+               <br>
+               <button class="goldButton" id="gold" onclick="myFunction('gold')"></button>
+               <br>
+               <button class="whiteButton" id="white" onclick="myFunction('white')"></button>
+            </div>
+                                       <div class="main-box" id="mainDiv">
+
+                                    </div>
+               <div class="right-side">
+                   <button class="orangeButton" id="orange" onclick="myFunction('orange')"></button>
+                   <br>
+                   <button class="tanButton" id="tan" onclick="myFunction('tan')"></button>
+                   <br>
+                   <button class="darkcyanButton" id="darkcyan" onclick="myFunction('darkcyan')"></button>
+                </div>
+       </div> 
+        <div class="button-line">
+            <button class="redButton" id="red" onclick="myFunction('red')"></button>
+            <button class="blueButton" id="blue" onclick="myFunction('blue')"></button>
+            <button class="greenButton" id="green" onclick="myFunction('green')"></button>
+            <button class="yellowButton" id="yellow" onclick="myFunction('yellow')"></button>
+            <button class="brownButton" id="brown" onclick="myFunction('brown')"></button>
+            <button class="purpleButton" id="purple" onclick="myFunction('purple')"></button>
+            <button class="aquaButton" id="aqua" onclick="myFunction('aqua')"></button>
+            <button class="blackButton" id="black" onclick="myFunction('black')"></button>
+        </div>
+    </div>
+    <script>
+
+        let colr = ['red', 'blue', 'green', 'yellow', 'brown', 'purple', 'aqua', 'black', 'silver', 'gold', 'white', 'orange', 'tan', 'darkcyan']
+    
+        function myFunction(id) {
+            document.getElementById('mainDiv').style.backgroundColor = id
+            document.getElementById('mainDiv').style.borderColor = id
+            // document.getElementById('mainDiv').style.boxShadow = '10px 10px 10px gray'
+            document.getElementById('mainDiv').style.boxShadow = `10px 10px 10px ${colr.indexOf(id) + 1 !== colr.length? colr[colr.indexOf(id)+1]: colr[0]}`
+        }
+
+    </script>
+</body>
+</html>

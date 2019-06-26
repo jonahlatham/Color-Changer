@@ -1,0 +1,117 @@
+.whole {
+    text-align: center;
+}
+
+.main-box {
+    width: 500px;
+    height: 500px;
+    background: white;
+    border-style: solid;
+    border-color: gray;
+    border-width: 10px;
+    margin: auto;
+}
+
+/* .button-line {
+    margin: 10px;
+} */
+
+button {
+    width: 25px;
+    height: 25px;
+    border-style: outset;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:active {
+    opacity: .5;
+}
+
+.redButton {
+    background: red;
+    margin: 10px;
+    border-radius: 10px;
+}
+.blueButton {
+    background: blue;
+    margin: 10px;
+    border-radius: 10px;
+}
+.greenButton {
+    background: green;
+    margin: 10px;
+    border-radius: 10px;
+}
+.yellowButton {
+    background: yellow;
+    margin: 10px;
+    border-radius: 10px;
+}
+.blackButton {
+    background: black;
+    margin: 10px;
+    border-radius: 10px;
+}
+.purpleButton {
+    background: purple;
+    margin: 10px;
+    border-radius: 10px;
+}
+.aquaButton {
+    background: aqua;
+    margin: 10px;
+    border-radius: 10px;
+}
+.brownButton {
+    background: brown;
+    margin: 10px;
+    border-radius: 10px;
+}
+.silverButton {
+    background: silver;
+    margin: 10px;
+    border-radius: 10px;
+}
+.goldButton {
+    background: gold;
+    margin: 10px;
+    border-radius: 10px;
+}
+.whiteButton {
+    background: white;
+    margin: 10px;
+    border-radius: 10px;
+}
+.orangeButton {
+    background: orange;
+    margin: 10px;
+    border-radius: 10px;
+}
+.tanButton {
+    background: tan;
+    margin: 10px;
+    border-radius: 10px;
+}
+.darkcyanButton {
+    background: darkcyan;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+
+.top-half {
+    display: flex;
+}
+
+.left-side {
+    margin-top: 195px;
+    margin-left: auto;
+}
+
+.right-side {
+    margin-top: 195px;
+    margin-right: auto;
+}

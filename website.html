@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Title</title>
+    <link rel="stylesheet" href="website.css">
+</head>
+<body>
+    <div class="whole-set">
+        <div class="main-div" id="mainDiv"></div>
+        <div class="buttons">
+            <button id="red" onclick="myFunction('red')" class="red"></button>
+            <button id="blue" onclick="myFunction('blue')" class="blue"></button>
+            <button id="green" onclick="myFunction('green')" class="green"></button>
+            <button id="yellow" onclick="myFunction('yellow')" class="yellow"></button>
+            <button id="black" onclick="myFunction('black')" class="black"></button>
+
+    <script>
+        let lolor = ["red", "blue", "green", "yellow", "black"];
+
+
+        
+        function myFunction(id) {
+        document.getElementById('mainDiv').style.backgroundColor = id;
+        document.getElementById('mainDiv').style.borderColor = id;
+        document.getElementById('mainDiv').style.boxShadow = `10px 10px 10px ${lolor.indexOf(id) + 1 !== lolor.length? lolor[lolor.indexOf(id) + 1]: lolor[0]}`
+            }
+    </script>
+</body>
+</html>
